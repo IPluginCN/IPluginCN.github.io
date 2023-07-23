@@ -7,7 +7,7 @@ a {
 	text-decoration:none;
 }
 #banner {
-	background:url(../images/5dd404628e0e2e3ee9333fbb.png);
+	background:url(/IPluginCN/IPluginCN.github.io/edit/main/static/images/5dd404628e0e2e3ee9333fbb.png);
 	background-size:cover;
 	background-position:center;
 	width:100%;
@@ -27,7 +27,7 @@ a {
 }
 .join-item {
 	font-size:30px;
-	color:white;
+	color:black;
 	padding-bottom:50px;
 }
 .join-item h2 {
