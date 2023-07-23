@@ -1,10 +1,75 @@
-<!DOTYPE>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta="UTF-8">
-    <title>IPlugin</title>
-  </head>
-  <body>
-<h1>还没搭建好，开发工作太多了</h1>
-  </body>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="IPlugin" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>IPlugin</title> 
+		<link rel="stylesheet" type="text/css" href="static/css/main.css">
+		<link rel="shortcut icon" href="img/cargo_managere.png" type="image/x-icon">
+		<script src="static/js/main.js"></script>
+		<style type="text/css">
+			.loading{width: 100%;height: 100%;z-index: 100;position: fixed;background: #FCFCFC;}.loading-img{width: 480px;height: 720px;margin: auto;background: url(static/images/1612704618.gif);}#menu-box{position: fixed;overflow: hidden;width: 100%;transition-duration:0.4s;height: 50px;background: none;}.menu{width: 1005px;margin:auto;height: 50px;background:none;}.menu-item h2 a{padding-top:6px;color:#C6CDD4;transition-duration: 0.4s;padding-left:10px;float:left;}.menu-item a{padding:13px 15px;color:#C6CDD4;float:right;transition-duration: 0.4s;}.menu-item a:hover{color:white;font-size:20px;}.menu-item h2 a:hover{color:white;font-size:27px;}#item-box{height: 1150px;background:white;overflow: hidden;}
+		</style>
+	</head>
+	<script>
+		document.onreadystatechange=function(){
+			if(document.readyState=="complete"){
+				$(".loading").fadeOut();
+			}
+		}
+	</script>
+	<body>
+		<div class="loading">
+			<div class="loading-img">
+			</div>
+		</div>
+		<div id="menu-box">
+			<div class="menu">
+				<div class="menu-item">
+					<h2 class="logo"><a href="https://iw46teamcn.github.io">iw46Team</a></h2>
+					<div class="menu-item-list">
+						<a href="https://iw46teamcn.github.io/aboutus.html">关于</a>
+						<a href="https://afdian.net/">捐赠</a>
+				
+						<a href="download.html">下载</a> 
+						<a href="index.html">首页</a> 
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="banner">
+			<div class="join-buttom">
+				<div class="join-item">
+					<h2>IPlugin</h2>
+					    <p>新一代国产服务器多功能插件</p>
+					</div>
+			
+			</div>
+		</div>
+		
+			
+		</div>	
+		<script src="static/js/jquery.js"></script>
+	<script>
+			function scroll() {
+					var top = $("#item-box").offset().top;
+					var scrollTop = $(window).scrollTop();
+					if (scrollTop < top) {
+						$('#menu-box').css({"background":"none"});
+						$('#menu-box').css({"box-shadow":"none"});
+						$(".menu-item h2 a").css({"color":"#C6CDD4"})
+						$(".menu-item a").css({"color":"#C6CDD4"});
+					} else {
+						$("#menu-box").css({"background":"#FFFFFF"});
+						$("#menu-box").css({"box-shadow":"0px 0px 8px #EAEAEA"});
+						$(".menu-item h2 a").css({"color":"#333333"})
+						$(".menu-item-list a").css({"color":"#333333"});
+					}
+				}
+				$(window).on('scroll', function() {
+					scroll()
+				});
+		</script>
+	</body>
 </html>
