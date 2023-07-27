@@ -4,13 +4,14 @@
     <meta charset="UTF-8"> 
     <title>下载IPlugin</title> 
     <style> 
-      body { margin: 0; } .navbar { background-color: black; color: white; padding: 10px; display: flex; justify-content: space-between; } .navbar-left { font-size: 24px; } .navbar-right { display: flex; justify-content: flex-end; } .navbar-link { margin-left: 10px; color: white; text-decoration: none; } .content { text-align: center; margin-top: 100px; } .title { font-size: 36px; } .download-button { margin-top: 20px; padding: 10px 20px; background-color: black; color: white; font-size: 24px; text-decoration: none; border-radius: 5px; } 
+      .black_overlay{display: none;position: absolute;top: 0%;left: 0%;width: 100%;height: 100%;background-color: black;z-index:1001;-moz-opacity: 0.8;opacity:.80;filter: alpha(opacity=88);}.white_content {display: none;position: absolute;top: 25%;left: 25%;width: 55%;height: 55%;padding: 20px;border: 10px solid black;background-color: white;z-index:1002;overflow: auto;}body { margin: 0; } .navbar { background-color: black; color: white; padding: 10px; display: flex; justify-content: space-between; } .navbar-left { font-size: 24px; } .navbar-right { display: flex; justify-content: flex-end; } .navbar-link { margin-left: 10px; color: white; text-decoration: none; } .content { text-align: center; margin-top: 100px; } .title { font-size: 36px; } .download-button { margin-top: 20px; padding: 10px 20px; background-color: black; color: white; font-size: 24px; text-decoration: none; border-radius: 5px; } 
     </style> 
   </head> 
   <body> 
     <div class="navbar"> 
       <div class="navbar-left"> <a class="navbar-link" href="https://iw46teamcn.github.io">iw46Team</a> </div> 
       <div class="navbar-right"> <a class="navbar-link" href="index.html">主页</a>  <a class="navbar-link" href="#none">下载</a> <a class="navbar-link" href="https://afdian.net/a/iplugincn/">捐赠</a> <a class="navbar-link" href="https://iw46teamcn.github.io/aboutus">关于</a> </div> </div> 
-    <div class="content"> <h2 class="title">[IT]ITroll-更好的服务器整活</h2> <a class="download-button" href="https://fs-im-kefu.7moor-fs1.com/29397395/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1690343392464/ITroll-pre-test.jar">下载ITroll v2.1</a> </div> 
-  </body> 
+    <div class="content"> <h2 class="title">[IT]ITroll-更好的服务器整活</h2> <a class="download-button" href="https://fs-im-kefu.7moor-fs1.com/29397395/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1690343392464/ITroll-pre-test.jar">下载ITroll v2.1</a> 
+     <a class="download-button" href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">最新版本ITroll3.8</a></div>
+    <div id="light" class="white_content">3.8为自用版本，您不能下载！<a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">我知道了</a></div><div id="fade" class="black_overlay"></div>
 </html>
