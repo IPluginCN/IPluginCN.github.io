@@ -1,0 +1,30 @@
+
+<!DOTYPE>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>IwMusic</title>
+    <style type="text/css">
+	   .wrapper {position: relative;}
+	   #input {position: absolute;top: 0;left: 0;opacity: 0;z-index: -10;}
+	</style>
+    </head>
+  <body>
+    <h1>普通用户密钥</h1>
+    <div class="wrapper">
+       <p id="text">download</p>
+       <textarea id="input">download</textarea>
+       <button onclick="copyText()">点击复制密钥</button>
+    </div>
+    </body>
+  <script type="text/javascript">
+	function copyText() {
+        var text = document.getElementById("text").innerHTML;
+        var input = document.getElementById("input");
+        input.value = text;
+        input.select();
+        document.execCommand("copy");
+    }
+</script>
+  </html>
+    
